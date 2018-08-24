@@ -90,7 +90,7 @@ pm2 start -i max
 ### 终端监控
 
 <p align="center">
-   <img alt="PM2 Monit" src="img/monit.png" width="70%" height="">
+   <img alt="PM2 Monit" src="img/monit.png" width="80%" height="">
 </p>
 
 `PM2`可以在终端内监控你的应用，检查应用的健康状态（CPU使用率，内存占用，分钟内请求次数等等）
