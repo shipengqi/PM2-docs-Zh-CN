@@ -120,8 +120,4 @@ Hello World!
 
 ### 下一步
 
-<h1 align="center">
-    <a href="startup_hook.html">
-      启动钩子
-    </a>
-</h1>
+**[启动钩子](startup_hook.md)**

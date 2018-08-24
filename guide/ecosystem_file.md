@@ -93,8 +93,4 @@ pm2 restart ecosystem.config.js --env production --update-env
 
 ### 下一步
 
-<h1 align="center">
-    <a href="process_management.html">
-      进程管理
-    </a>
-</h1>
+**[进程管理](process_management.md)**

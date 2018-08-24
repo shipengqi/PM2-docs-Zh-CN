@@ -110,8 +110,4 @@ pm2 monit
 
 ### 下一步
 
-<h1 align="center">
-    <a href="log_management.html">
-      日志管理
-    </a>
-</h1>
+**[日志管理](log_management.md)**
