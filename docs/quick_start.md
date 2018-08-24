@@ -101,7 +101,7 @@ pm2 reload app
 ### 下一步
 
 <h1 align="center">
-    <a href="installation.html">
-      安装
+    <a href="guide.html">
+      使用指南
     </a>
 </h1>
