@@ -8,7 +8,14 @@
   </a>
 </p>
 
-**本文档图片均来自[官方文档](https://pm2.io/doc/en/runtime/overview/)，如有侵权，请联系我(`pooky.shipengqi@gmial.com`)删除。**
+<p align="center">
+  本文档图片均来自
+  <a href="https://pm2.io/doc/en/runtime/overview/">
+    官方文档
+  </a>
+  ，如有侵权，请联系我(`pooky.shipengqi@gmial.com`)删除。
+</p>
+
 
 ## 概述
 为什么要使用`PM2`? 看完这篇介绍，你会对使用`PM2`进行进程管理有更好的理解。
@@ -23,7 +30,7 @@ pm2 start app.js
 ```
 
 <h1 align="center">
-    <a href="dcos/quick_start.md">
+    <a href="docs/quick_start.md">
       快速开始
     </a>
 </h1>
@@ -45,7 +52,7 @@ pm2 ls
 
 
 <h1 align="center">
-    <a href="dcos/guide.md">
+    <a href="docs/guide.md">
       进程管理
     </a>
 </h1>
@@ -60,7 +67,7 @@ pm2 logs <app_name>
 ```
 
 <h1 align="center">
-    <a href="dcos/guide.md">
+    <a href="docs/guide.md">
       日志管理
     </a>
 </h1>
@@ -74,7 +81,7 @@ pm2 start -i max
 ```
 
 <h1 align="center">
-    <a href="dcos/guide.md">
+    <a href="docs/guide.md">
       负载均衡
     </a>
 </h1>
@@ -98,7 +105,7 @@ pm2 deploy
 ```
 
 <h1 align="center">
-    <a href="dcos/guide.md">
+    <a href="docs/guide.md">
       使用SSH部署
     </a>
 </h1>
@@ -106,7 +113,7 @@ pm2 deploy
 ### 下一步
 
 <h1 align="center">
-    <a href="dcos/quick_start.md">
+    <a href="docs/quick_start.md">
       快速开始
     </a>
 </h1>
