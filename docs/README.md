@@ -30,7 +30,7 @@ pm2 start app.js
 ```
 
 <h1 align="center">
-    <a href="quick_start.md">
+    <a href="quick_start.html">
       快速开始
     </a>
 </h1>
@@ -52,7 +52,7 @@ pm2 ls
 
 
 <h1 align="center">
-    <a href="guide.md">
+    <a href="guide.html">
       进程管理
     </a>
 </h1>
@@ -67,7 +67,7 @@ pm2 logs <app_name>
 ```
 
 <h1 align="center">
-    <a href="guide.md">
+    <a href="guide.html">
       日志管理
     </a>
 </h1>
@@ -81,7 +81,7 @@ pm2 start -i max
 ```
 
 <h1 align="center">
-    <a href="guide.md">
+    <a href="guide.html">
       负载均衡
     </a>
 </h1>
@@ -105,7 +105,7 @@ pm2 deploy
 ```
 
 <h1 align="center">
-    <a href="guide.md">
+    <a href="guide.html">
       使用SSH部署
     </a>
 </h1>
@@ -113,7 +113,7 @@ pm2 deploy
 ### 下一步
 
 <h1 align="center">
-    <a href="quick_start.md">
+    <a href="quick_start.html">
       快速开始
     </a>
 </h1>

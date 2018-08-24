@@ -101,7 +101,7 @@ pm2 reload app
 ### 下一步
 
 <h1 align="center">
-    <a href="installation.md">
-      生态系统文件
+    <a href="installation.html">
+      安装
     </a>
 </h1>

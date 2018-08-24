@@ -8,7 +8,7 @@
 - `process list`进程列表，你的应用和应用的参数，环境都注册在进程列表中。这个列表只包含使用`pm2`启动的所有进程。
 
 <h1 align="center">
-    <a href="installation.md">
+    <a href="installation.html">
       开始使用
     </a>
 </h1>
