@@ -1,107 +1,100 @@
-## 快速入门
+## 生态系统文件
 
-这个教程会展示如何使用`PM2`快速配置`Node.js`应用。
+当在多个服务器上部署或使用多个`CLI`参数时，使用生态系统文件来替代命令行启动应用，将会更加方便。
 
-### 安装
-使用`yarn`安装：
+生态系统文件的目的是收集应用所有的配置选项和环境变量。
+
+### 创建模版
+创建一个`ecosystem.config.js`模版：
 ```bash
-yarn global add pm2
+pm2 init
 ```
 
-使用`yarn`安装：
-```bash
-yarn global add pm2
+这个命令会生成：
+```javascript
+module.exports = {
+  apps : [{
+    name: "app",
+    script: "./app.js",
+    env: {
+      NODE_ENV: "development",
+    },
+    env_production: {
+      NODE_ENV: "production",
+    }
+  }]
+}
 ```
 
-在`debian`系统下，使用安装脚本：
-```bash
-apt update && apt install sudo curl && curl -sL https://raw.githubusercontent.com/Unitech/pm2/master/packager/setup.deb.sh | sudo -E bash -
-```
+更多可用的配置选项，查看[生态系统文件参考]()
 
-使用`docker`安装, 参考这个[文档](docs/docker.md)。
-
-
-#### 使用 CLI 自动完成安装
-```bash
-pm2 completion install
-```
-
-### 管理多个进程
-`PM2`了一份你的进程列表，可以方便的启动，重启和停止这些进程。
-
-你的所有应用都是后台运行，使用`PM2`命令行与应用交互。
-
-#### 进程列表
-使用`start`和`delete`命令添加删除列表中的进程：
-```bash
-# start and add a process to your list
-pm2 start app.js
-
-# show your list
-pm2 ls
-
-# stop and delete a process from the list
-pm2 delete app
-```
-
-> 注意，进程的名字默认是文件名。(例如: `app` 对应 `app.js`). 可以使用 `--name`或 `-n` 来更改进程名字。
-
+### 生态系统文件使用
 #### 常规
-在进程列表中，使用进程名与应用程序交互。
+在你的源代码工作目录中，使用下面的命令可以将所有应用程序添加到进程列表中：
 ```bash
-# stop the process (kill the process but keep it in the process list)
-pm2 stop app
-
-# start the process
-pm2 start app
-
-# both stop and start
-pm2 restart app
+pm2 start
 ```
 
-你也可以配置一个[启动脚本]()，以便在机器在重启时自动重启你的进程列表。
+这个命令会运行定义在`ecosystem.config.js`文件（运行`pm2 init`生成）中的所有应用。
 
-### 查看应用日志
-使用命令`pm2 logs <app name>`查看实时日志。
-在`~/.pm2/logs`目录中查看日志历史文件。
-
-### 集群化
-群集模式可以最大化的利用你的`CPU`，根据`CPU`核数扩展应用，不需要修改任何代码。
-
-> 在使用负载均衡之前，确保你的应用是无状态的，意味着不要再进程中保存任何状态有关的数据。（比如`WebSocket`连接，`session`或者相关的数据）
-
-启动集群模式，使用`-i`参数指定要启动的集群数量：
+你也可以从指定目录中加载生态系统文件：
 ```bash
-pm2 start app.js -i 4
+pm2 start /path/to/ecosystem.config.js
 ```
 
-或者自动检测可用的`CPU`的数量：
+#### 针对指定的应用
+只针对生态系统文件中定义的指定应用：
 ```bash
-pm2 start app.js -i max
+pm2 start --only app
+```
+### 环境变量
+可以为多个环境声明变量, 环境变量的`key`必须遵守这种格式`env_<environment-name>`。
+
+例如，下面例子中的`app`进程会在两个环境中启动：`development`和`production`。
+
+```bash
+module.exports = {
+  apps : [{
+    name: "app",
+    script: "./app.js",
+    env: {
+      NODE_ENV: "development",
+    },
+    env_production: {
+      NODE_ENV: "production",
+    }
+  }]
+}
+```
+要在特定环境下启动应用，请使用`--env`标志，如上面的例子：
+```bash
+pm2 start ecosystem.config.js                   # uses variables from `env`
+pm2 start ecosystem.config.js --env production  # uses variables from `env_production`
 ```
 
-使用`reload`代替`restart`实现无中断重载应用：
+### 不可变的环境
+进程一旦添加到进程列表，那么这个进程的环境就不会再改变。使用：
+- 当前环境
+- 生态系统文件
+
+因此，如果进程重启时与当前环境不同或有了的新生态系统文件，进程环境不会改变。
+
+这是为了确保应用重启时能够保持一致。
+
+#### 更新环境
+那么，如果想要强制更新环境，使用`--update-env`参数：
 ```bash
-pm2 reload app
+# refresh the environment
+pm2 restart ecosystem.config.js --update-env
+
+# switch the environment
+pm2 restart ecosystem.config.js --env production --update-env
 ```
-
-### 更多 CLI 命令
-使用制表符自动完成并发现新的命令：
-
-<p align="center">
-   <img alt="PM2 autocomplete" src="/img/autocomplete.png" width="80%" height="">
-</p>
-
-更多命令，使用`--help`参数：
-
-<p align="center">
-   <img alt="PM2 autocomplete" src="/img/help.png" width="80%" height="">
-</p>
 
 ### 下一步
 
 <h1 align="center">
-    <a href="ecosystem_file.html">
-      生态系统文件
+    <a href="process_management.html">
+      进程管理
     </a>
 </h1>

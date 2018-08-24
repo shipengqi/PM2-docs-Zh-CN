@@ -52,7 +52,7 @@ pm2 ls
 
 
 <h1 align="center">
-    <a href="guide.html">
+    <a href="process_management.html">
       进程管理
     </a>
 </h1>
@@ -67,7 +67,7 @@ pm2 logs <app_name>
 ```
 
 <h1 align="center">
-    <a href="guide.html">
+    <a href="log_management.html">
       日志管理
     </a>
 </h1>
@@ -81,7 +81,7 @@ pm2 start -i max
 ```
 
 <h1 align="center">
-    <a href="guide.html">
+    <a href="load_balancing.html">
       负载均衡
     </a>
 </h1>
@@ -105,7 +105,7 @@ pm2 deploy
 ```
 
 <h1 align="center">
-    <a href="guide.html">
+    <a href="deploy_with_ssh.html">
       使用SSH部署
     </a>
 </h1>

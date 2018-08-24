@@ -41,8 +41,6 @@ npm install pm2 -g && pm2 update
 
 ### 下一步
 
-### 下一步
-
 <h1 align="center">
     <a href="ecosystem_file.html">
       生态系统文件
