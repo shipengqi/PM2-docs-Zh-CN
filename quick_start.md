@@ -89,13 +89,13 @@ pm2 reload app
 使用制表符自动完成并发现新的命令：
 
 <p align="center">
-   <img alt="PM2 autocomplete" src="/img/autocomplete.png" width="80%" height="">
+   <img alt="PM2 autocomplete" src="img/autocomplete.png" width="80%" height="">
 </p>
 
 更多命令，使用`--help`参数：
 
 <p align="center">
-   <img alt="PM2 autocomplete" src="/img/help.png" width="80%" height="">
+   <img alt="PM2 autocomplete" src="img/help.png" width="80%" height="">
 </p>
 
 ### 下一步
