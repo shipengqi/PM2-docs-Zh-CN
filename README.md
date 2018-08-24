@@ -1,37 +1,77 @@
-## Welcome to GitHub Pages
+<h1 align="center">
+  PM2 Runtime
+</h1>
 
-You can use the [editor on GitHub](https://github.com/shipengqi/PM2-docs-Zh-CN/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+<p align="center">
+  <a href="https://pm2.io/doc/en/runtime/overview/">
+    <img alt="PM2 Runtime" src="img/runtime-black.png">
+  </a>
+</p>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**本文档图片均来自[官方文档](https://pm2.io/doc/en/runtime/overview/)，如有侵权，请联系我(`pooky.shipengqi@gmial.com`)删除。**
 
-### Markdown
+## 概述
+为什么要使用`PM2`? 看完这篇介绍，你会对使用`PM2`进行进程管理有更好的理解。
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### 持久化
 
-```markdown
-Syntax highlighted code block
+使用`PM2`启动你的应用，你的应用在崩溃或者机器重启时都可以自动重启。
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+只需要简单的运行一条命令：
+```bash
+pm2 start app.js
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### 进程管理
+使用`PM2`启动的应用都是守护进程，而且方便管理。
+用下面的命令可以查看进程列表：
+```bash
+pm2 ls
+```
 
-### Jekyll Themes
+使用`pm2 start`和`pm2 delete`添加或删除列表中的进程。
+使用`pm2 start`、`pm2 stop`、`pm2 restart`你所有的进程。
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shipengqi/PM2-docs-Zh-CN/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+### 日志管理
+使用`PM2`启动的应用都是守护进程，而且方便管理。
+用下面的命令可以查看进程列表：
+```bash
+pm2 ls
+```
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+使用`pm2 start`和`pm2 delete`添加或删除列表中的进程。
+使用`pm2 start`、`pm2 stop`、`pm2 restart`你所有的进程。
+
+### 零配置负载均衡
+使用`PM2`启动的应用都是守护进程，而且方便管理。
+用下面的命令可以查看进程列表：
+```bash
+pm2 ls
+```
+
+使用`pm2 start`和`pm2 delete`添加或删除列表中的进程。
+使用`pm2 start`、`pm2 stop`、`pm2 restart`你所有的进程。
+
+### 终端监控
+使用`PM2`启动的应用都是守护进程，而且方便管理。
+用下面的命令可以查看进程列表：
+```bash
+pm2 ls
+```
+
+使用`pm2 start`和`pm2 delete`添加或删除列表中的进程。
+使用`pm2 start`、`pm2 stop`、`pm2 restart`你所有的进程。
+
+### 使用SSH部署
+使用`PM2`启动的应用都是守护进程，而且方便管理。
+用下面的命令可以查看进程列表：
+```bash
+pm2 ls
+```
+
+使用`pm2 start`和`pm2 delete`添加或删除列表中的进程。
+使用`pm2 start`、`pm2 stop`、`pm2 restart`你所有的进程。
+
+### 下一步
+### 问题
