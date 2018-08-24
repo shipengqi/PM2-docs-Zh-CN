@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://pm2.io/doc/en/runtime/overview/">
-    <img alt="PM2 Runtime" src="img/runtime-black.png" width="50%" height="">
+    <img alt="PM2 Runtime" src="docs/img/runtime-black.png" width="50%" height="">
   </a>
 </p>
 
@@ -38,7 +38,7 @@ pm2 start app.js
 ### 进程管理
 
 <p align="center">
-   <img alt="PM2 LS" src="img/pm2ls.png" width="70%" height="">
+   <img alt="PM2 LS" src="docs/img/pm2ls.png" width="70%" height="">
 </p>
 
 使用`PM2`启动的应用都是守护进程，而且方便管理。
@@ -90,7 +90,7 @@ pm2 start -i max
 ### 终端监控
 
 <p align="center">
-   <img alt="PM2 Monit" src="img/monit.png" width="80%" height="">
+   <img alt="PM2 Monit" src="docs/img/monit.png" width="80%" height="">
 </p>
 
 `PM2`可以在终端内监控你的应用，检查应用的健康状态（CPU使用率，内存占用，分钟内请求次数等等）
