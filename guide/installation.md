@@ -17,7 +17,7 @@ yarn global add pm2
 apt update && apt install sudo curl && curl -sL https://raw.githubusercontent.com/Unitech/pm2/master/packager/setup.deb.sh | sudo -E bash -
 ```
 
-使用`docker`安装, 参考这个[文档](docs/docker.md)。
+使用`docker`安装, 参考这个[文档](../integration/docker.md)。
 
 
 #### 使用 CLI 自动完成安装

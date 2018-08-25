@@ -61,7 +61,7 @@ pm2 resurrect
 
 > 你的进程列表会保存到`$HOME/.pm2/dump.pm2`
 
-你可以设置[启动钩子]()，在机器重启是自动启动进程列表。
+你可以设置[启动钩子](startup_hook.md)，在机器重启是自动启动进程列表。
 
 ### 管理任意类型的应用
 `pm2`与其他编程语言兼容，使用下面这种对应关系：
@@ -99,7 +99,7 @@ module.exports = {
 ### 本地监控
 
 <p align="center">
-   <img alt="PM2 Monit" src="img/monit.png" width="80%" height="">
+   <img alt="PM2 Monit" src="../img/monit.png" width="80%" height="">
 </p>
 
 本地监控工具可以让你获取到每个进程的`CPU`使用情况，内存使用情况，环路延迟或每分钟的请求数：

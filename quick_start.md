@@ -18,7 +18,7 @@ yarn global add pm2
 apt update && apt install sudo curl && curl -sL https://raw.githubusercontent.com/Unitech/pm2/master/packager/setup.deb.sh | sudo -E bash -
 ```
 
-使用`docker`安装, 参考这个[文档](docs/docker.md)。
+使用`docker`安装, 参考这个[文档](integration/docker.md)。
 
 
 #### 使用 CLI 自动完成安装
@@ -59,7 +59,7 @@ pm2 start app
 pm2 restart app
 ```
 
-你也可以配置一个[启动脚本]()，以便在机器在重启时自动重启你的进程列表。
+你也可以配置一个[启动脚本](guide/startup_hook.md)，以便在机器在重启时自动重启你的进程列表。
 
 ### 查看应用日志
 使用命令`pm2 logs <app name>`查看实时日志。

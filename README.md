@@ -25,7 +25,7 @@
   - [进程管理](guide/process_management.md)
   - [日志管理](guide/log_management.md)
   - [启动钩子](guide/startup_hook.md)
-  - [负载均衡](guide/load_balancing.md)
+  - [负载均衡（集群模式）](guide/load_balancing.md)
   - [开发工具](guide/development_tools.md)
   - [使用SSH快速部署](guide/deploy_with_ssh.md)
 - [最佳实践](best_practices/)
@@ -94,7 +94,7 @@ pm2 logs <app_name>
 pm2 start -i max
 ```
 
-**[负载均衡](guide/load_balancing.md)**
+**[负载均衡（集群模式）](guide/load_balancing.md)**
 
 
 ### 终端监控

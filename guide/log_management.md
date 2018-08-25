@@ -46,7 +46,7 @@ module.exports = {
 pm2 install pm2-logrotate
 ```
 
-如何[配置循环日志]()。
+如何[配置循环日志](https://github.com/keymetrics/pm2-logrotate)。
 
 ### 合并日志
 在群集模式下，每个群集都有自己的日志文件。 你可以使用合并选项收集所有的日志到一个文件中：
