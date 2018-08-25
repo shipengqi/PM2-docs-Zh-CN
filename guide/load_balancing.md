@@ -36,7 +36,7 @@ module.exports = {
 
 内部状态通常是存储在进程中的一些本地数据。 例如，它可以是一组`websocket`的连接或本地`session`。 可以使用`Redis`或其他数据库来共享进程间的状态。
 
-创建无状态应用[教程](../best_practices/stateless_application)。
+创建无状态应用[教程](../best_practices/stateless_application.md)。
 
 ### 不宕机重载
 使用`restart`命令时，`pm2`先杀掉进程然后重启进程，所以重启的这段时间是无法使用服务的。
