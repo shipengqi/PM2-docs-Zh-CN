@@ -7,5 +7,5 @@
 - [AWS Elastic Beanstalk](aws_elastic_beanstalk.md)
 - [Docker](docker.md)
 - [Heroku](heroku.md)
-- [转化器](transpilers.md)
+- [转译器](transpilers.md)
 - [使用云供应商](cloud_providers.md)

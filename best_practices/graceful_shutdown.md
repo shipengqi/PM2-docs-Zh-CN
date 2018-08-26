@@ -147,7 +147,7 @@ module.exports = {
 }
 ```
 
-> 默认情况下，在`3000ms`后，`PM2`会考虑准备好你的应用。 使用`listen_timeout`改变这个值。
+> 默认情况下，`PM2`会监听应用是否`ready`，如果`3000ms`后没有`ready`会强制重载。 使用`listen_timeout`改变这个值。
 
 让我们继续使用之前的`express`应用:
 ```javascript
