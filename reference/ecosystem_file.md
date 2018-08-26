@@ -41,7 +41,7 @@ module.exports = {
 `instances`|指定集群模式下启动的实例数|`Number`|`1`
 `kill_timeout`|指定`PM2`杀掉进程的超时时间，单位毫秒。`PM2`在发送`SIGKILL`信号之前，如果应用进程没用自己退出，`PM2`等待{kill_timeout}毫秒后会主动杀掉应用进程|`Number`|`1600`
 `listen_timeout`|单位毫秒，`PM2`会监听应用是否`ready`，如果{listen_timeout}后没有`ready`会强制重载，则强制重载|`Number`|
-`cron_restart`|一个`cron`模式来重启您的应用|`String`|
+`cron_restart`|一个`cron`模式来重启你的应用|`String`|
 `merge_logs`|在集群模式下，将每种类型的日志合并到一个文件中（而不是每个集群都有单独的日志文件）|`Boolean`|
 `vizion`|启用或禁用版本元数据（`vizion`库）|`Boolean`|`true`
 `autorestart`|进程失败后启用或禁用自重启|`Boolean`|`true`

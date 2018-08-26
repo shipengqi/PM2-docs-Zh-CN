@@ -69,7 +69,7 @@ yarn add pm2
 
 ![访问密钥](../img/IAM-creds.png)
 
-将`access-id`和`secret-key`粘贴到您的`AWS`配置文件(`~/.aws/config`)：
+将`access-id`和`secret-key`粘贴到你的`AWS`配置文件(`~/.aws/config`)：
 
 ```Vim
 [profile eb-cli]

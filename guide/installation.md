@@ -29,7 +29,7 @@ pm2 completion install
 
 源地图文件如果存在，源地图文件默认是会被自动检测的 (`app.js.map` for `app.js`）。
 
-> 什么是源地图文件？如果你正使用`Babel`，·Typescript·或其他的`Javascript`超集，您可能已经注意到堆栈跟踪没有意义，
+> 什么是源地图文件？如果你正使用`Babel`，·Typescript·或其他的`Javascript`超集，你可能已经注意到堆栈跟踪没有意义，
 错误不会指出正确的行数。源地图文件则可以用来解决这个问题。
 
 ### 更新

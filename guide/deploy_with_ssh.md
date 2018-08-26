@@ -180,7 +180,7 @@ Host deployment
 
 ### 下一步
 感谢阅读本指南。
-现在您可以查看[参考](../reference)以掌握`PM2`的所有功能。
+现在你可以查看[参考](../reference)以掌握`PM2`的所有功能。
 
 ### 问题
 我们很乐于帮你解决你可能遇到的问题。搜索或查看`FAQ`。你也可以在`PM2`的[GitHub仓库](https://github.com/Unitech/pm2/issues)提交问题或评论。
