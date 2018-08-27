@@ -13,7 +13,7 @@
   <a href="https://pm2.io/doc/en/runtime/overview/">
     官方文档
   </a>
-  ，如有侵权，请联系我(<b>pooky.shipengqi@gmial.com`</b>)删除。
+  ，如有侵权，请联系我(<b>pooky.shipengqi@gmial.com</b>)删除。
 </p>
 
 ## 目录
